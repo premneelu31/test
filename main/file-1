@@ -1,1 +1,9 @@
-hi this is prem kumar
+---
+- name: this is the playbook
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: install nginx
+      apt:
+       name: nigix
+       state: presnet
